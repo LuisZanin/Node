@@ -3,7 +3,7 @@ import { Schema, model } from 'mongoose'
 const characterSchema = new Schema({
     name: String,
     description: String,
-    img_URL: String
+    thumbnail: String
 }, {
     timestamps: true
 });

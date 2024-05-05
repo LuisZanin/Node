@@ -2,6 +2,7 @@ import { Router } from 'express'
 import creatorController from '../controllers/creator.controller'
 
 const CreatorRoutes = Router()
+CreatorRoutes.get('/populateCreators', creatorController.populateCreators)
 CreatorRoutes.post('/Creators', creatorController.create)
 CreatorRoutes.get('/Creators', creatorController.findAll)
 CreatorRoutes.get('/Creators/:id', creatorController.findById)

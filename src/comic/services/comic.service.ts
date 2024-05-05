@@ -22,9 +22,8 @@ class comicsService {
         const updatedComic = await comicSchema.findByIdAndUpdate(id, {
             title: comic.title,
             description: comic.description,
-            release_date: comic.release_date,
-            cover: comic.cover
-            
+            startYear: comic.startYear,
+            thumbnail: comic.thumbnail
         }, { new: true })
 
         return updatedComic
